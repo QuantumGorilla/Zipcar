@@ -1,0 +1,14 @@
+{
+    "name": "manotasja/manotasja",
+    "description": "Just to deploy",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "QuantumQuantumGorilla",
+            "email": "manotasja@uninorte.edu.co"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

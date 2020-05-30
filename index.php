@@ -261,8 +261,8 @@ $busqueda=$bdd->prepare('SELECT * FROM autos');
     <section id="reserva" class="about">
                 <div class="container">
 				<h3 class="pt-5 mb-5 text-center">Reserve and order</h3>
-      <div class="text-center row no-gutters ml-auto mr-auto justify-content-center" style="width: 90%;" >
-        <div class="col-md-6 col-lg-4 pl-4 pr-4 mb-5">
+      <div class="text-center row no-gutters w-100 ml-auto mr-auto justify-content-center" >
+        <div class="col-md-6 pl-4 pr-4 mb-5">
           <article class="soft w-100 p-4 h-100 rounded d-flex flex-column align-items-center" >
             <img src="./images/icons/Drive.png" alt="drive" class="mt-3" style="width: 35%;" />
             <h4 class="mt-4 mb-2">Reserve</h4>
@@ -286,7 +286,7 @@ foreach($autosresultado as $autosresultadook) { echo'
             </p>
           </article>
         </div>
-        <div class="col-md-6 col-lg-4 pl-4 pr-4 mb-5">
+        <div class="col-md-6 pl-4 pr-4 mb-5">
           <article class="soft w-100 p-4 h-100 rounded d-flex flex-column align-items-center" >
             <img src="./images/icons/Return.png" alt="drive" class="mt-3" style="width: 35%;" />
             <h4 class="mt-4 mb-2">Order</h4>
@@ -466,19 +466,39 @@ foreach($datosautosresultado as $datosautosresultadook) {
                 <div class="container">
 				<h3 class="pt-5 mb-5 text-center">Register</h3>
       <div class="text-center row no-gutters ml-auto mr-auto justify-content-center" style="width: 90%;" >
-        <div class="col-md-6 col-lg-4 pl-4 pr-4 mb-5">
+        <div class="col-md-10 pl-4 pr-4 mb-5">
           <article class="soft w-100 p-4 h-100 rounded d-flex flex-column align-items-center" >
-            <img src="./images/icons/registro.png" alt="drive" class="mt-3" style="width: 35%;" />
+            <img src="./images/icons/registro.png" alt="drive" class="mt-3 w-25"  />
 			<br /><?php if(isset($message)) { echo $message; } ?>
             <p class="mt-3">
-            <form method="post">
-            <input id="usuario" placeholder="Username" name="usuario" type="text" tabindex="1" required><br /><br />
-			<input id="nombre" placeholder="Name" name="nombre" type="text" tabindex="1" required><br /><br />
-			<input id="apellido" placeholder="Lastname" name="apellido" type="text" tabindex="1" required><br /><br />
-			<input id="identificacion" placeholder="Identification number" name="identificacion" type="text" tabindex="1" required><br /><br />
-			<input id="pass" placeholder="Password" name="pass" type="password" tabindex="1" required><br /><br />
-			<input id="email" placeholder="E-mail" name="email" type="email" tabindex="1" required><br /><br />
-			<button name="registrar" type="submit" id="registrar">Register</button>
+            <form method="post" class="w-50">
+
+            
+            <div class="form-group">
+              <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Username" required>
+          </div>
+
+          <div class="form-group">
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Name" required>
+          </div>
+
+          <div class="form-group">
+              <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Lastname" required>
+          </div>
+
+          <div class="form-group">
+              <input id="identificacion" class="form-control" placeholder="Identification number" name="identificacion" type="text" required>
+          </div>
+
+          <div class="form-group">
+              <input id="pass" class="form-control" placeholder="Password" name="pass" type="password" required>
+          </div>
+
+          <div class="form-group">
+              <input id="email" class="form-control" placeholder="E-mail" name="email" type="email" tabindex="1" required>
+          </div>
+          <button name="registrar" type="submit" id="registrar" class="btn btn-primary">Submit</button>
+
 			</form>
             </p>
           </article>

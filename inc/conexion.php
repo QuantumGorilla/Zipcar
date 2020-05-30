@@ -49,10 +49,13 @@ else
 			//Si no conecta mostramos el formulario 
 			?>
 
-		<form method="post" action="index.php">
-            <input id="user" placeholder="Username" name="user" type="text" tabindex="1" required>
-			<input id="passw" placeholder="Password" name="passw" type="password" tabindex="1" required>
-			<input type="submit" value="Login" name="submit">
+		<form method="post" action="index.php" class="form-inline">
+
+		
+		<input class="form-control mr-sm-2" id="user" placeholder="Username" name="user" type="text" required>
+		<input class="form-control mr-sm-2" id="passw" placeholder="Password" name="passw" type="password" required>
+    <button class="btn btn-outline-success my-2 my-sm-0 font-weight-bold" type="submit" value="Login" name="submit">Login</button>
+  
 			</form> <?php
 					   } ?>
 	
